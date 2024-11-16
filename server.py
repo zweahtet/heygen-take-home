@@ -11,6 +11,12 @@ start_time = time.time()
 
 @app.get("/status")
 async def get_status():
+    """
+    Simulates a server endpoint that returns the status of a video translation job.
+
+    Returns:
+        dict: A dictionary containing the status of the job, which can be "pending", "completed", or "error".
+    """
     elapsed_time = time.time() - start_time
     if elapsed_time < delay_time:
         return {"result": "pending"}
