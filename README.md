@@ -50,7 +50,7 @@ Final status: completed
 Run the integration tests using `pytest`:
 
 ```sh
-pytest test_integration.py
+pytest -s --log-cli-level=INFO test_integration.py
 ```
 
 ### Bells and Whistles
