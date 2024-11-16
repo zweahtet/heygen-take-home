@@ -26,7 +26,7 @@ class VideoTranslationClient:
     print(f"Final status: {status}")
     ```
     """
-    
+
     def __init__(self, base_url, max_attempts=10, backoff_factor=1.5, initial_delay=1):
         """
         Initialize the VideoTranslationClient.
